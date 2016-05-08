@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration
+PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-config.dtd">
+
+<configuration>
+	<!-- 런타임시 마이바티스의 행위를 조정하기 위한 중요한 값들이다 -->
+	<settings>
+		<!-- changes from the defaults -->
+		<!-- 지연로딩을 사용할지에 대한 여부. 사용하지 않는다면 모두 즉시 로딩할 것이다 -->
+		<setting name="lazyLoadingEnabled" value="false" />
+		<!-- 마바티스의 세팅 설정들. 자세한 의미는 홈페이지 참조(http://www.mybatis.org/mybatis-3/ko/configuration.html) -->
+		<!-- 
+			<setting name="cacheEnabled" value="true" />
+			<setting name="lazyLoadingEnabled" value="true" />
+			<setting name="multipleResultSetsEnabled" value="true" />
+			<setting name="useColumnLabel" value="true" />
+			<setting name="useGeneratedKeys" value="false" />
+			<setting name="autoMappingBehavior" value="PARTIAL" />
+			<setting name="autoMappingUnknownColumnBehavior" value="WARNING" />
+			<setting name="defaultExecutorType" value="SIMPLE" />
+			<setting name="defaultStatementTimeout" value="25" />
+			<setting name="defaultFetchSize" value="100" />
+			<setting name="safeRowBoundsEnabled" value="false" />
+			<setting name="mapUnderscoreToCamelCase" value="false" />
+			<setting name="localCacheScope" value="SESSION" />
+			<setting name="jdbcTypeForNull" value="OTHER" />
+			<setting name="lazyLoadTriggerMethods" value="equals,clone,hashCode,toString" />
+		-->
+	</settings>
+	
+	<!-- @Alias 를 사용하기 위해 해당 패키지를 등록함 -->
+	<typeAliases>
+		<package name="com.pms.domain" />
+	</typeAliases>
+</configuration>
