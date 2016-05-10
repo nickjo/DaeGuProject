@@ -14,7 +14,7 @@ import com.pms.service.BoardService;
 // SpringContext를 테스트용으로 구동하기 위해 환경을 잡아주겠다는 표시
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(locations={"classpath:config/*.xml"})
-public class MainControllerTest {
+public class TestMainController {
 	@SuppressWarnings("unused")
 	@Autowired
 	private ApplicationContext applicationContext;

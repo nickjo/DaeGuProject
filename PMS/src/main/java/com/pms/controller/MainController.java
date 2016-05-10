@@ -28,5 +28,11 @@ public class MainController {
 		log.info("====== [End getBoard()] =========");
 		return gson.toJson(list);
 	}
-			
+	
+	@RequestMapping(value="index.do")
+	public String index(){
+		log.info("====== [Start index()] =========");
+		log.info("====== [End index()] =========");
+		return "views/index";
+	}
 }
