@@ -2,7 +2,7 @@ package com.pms.dao;
 
 import java.util.List;
 
-import org.apache.ibatis.annotations.ResultMap;
+import org.apache.ibatis.annotations.ResultMap; 
 import org.apache.ibatis.annotations.Select;
 
 import com.pms.domain.BoardVO;
