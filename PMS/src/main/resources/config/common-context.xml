@@ -20,5 +20,8 @@
 	<context:spring-configured />
 	
 	<!-- DB접속 정보가 입력된 properties를 로드함 -->
-	<context:property-placeholder location="classpath:config/*.properties" />	
+	<context:property-placeholder location="classpath:config/*.properties" />
+	
+	<!-- mybatis Mapper Scan -->
+	<!-- <mybatis:scan base-package="com.pms.repository.mapper"/> -->	
 </beans>

@@ -5,9 +5,9 @@ PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
 
 <configuration>
 	<!-- @Alias 를 사용하기 위해 해당 패키지를 등록함 -->
-	<typeAliases>
+	<!-- <typeAliases>
 		<typeAlias type="com.pms.domain.BoardVO" alias="board" />
-		<!-- <package name="com.pms.domain" /> -->
+		<package name="com.pms.domain" />
 	</typeAliases>
 	<environments default="development">
 		<environment id="development">
@@ -22,7 +22,7 @@ PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
 	</environments>
 	<mappers>
 		<mapper resource="com/pms/mapper/BoardMapper.xml"/>
-	</mappers>
+	</mappers> -->
 	<!-- 런타임시 마이바티스의 행위를 조정하기 위한 중요한 값들이다 -->
 	<settings>
 		<!-- changes from the defaults -->
@@ -42,3 +42,4 @@ PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
 			/> -->
 	</settings>
 </configuration>
+
