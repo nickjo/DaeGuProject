@@ -16,15 +16,16 @@ import com.pms.service.BoardService;
 @Controller
 public class MainController {
 	@Autowired
-	BoardService boardServiceImpl;
+	private BoardService boardServiceImpl;
 	private Logger log = Logger.getLogger(this.getClass());
 	Gson gson = new Gson();
 	
 	@RequestMapping(value="getBoard.do")
-	public @ResponseBody String getBoard(BoardVO boardVO, Model model){
+	public @ResponseBody String getBoard(){
 		
 		log.info("====== [Start getBoard()] =========");
 		List<BoardVO> list = boardServiceImpl.getBoard();
+		log.info(list.toString());
 		log.info("====== [End getBoard()] =========");
 		return gson.toJson(list);
 	}

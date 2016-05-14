@@ -11,8 +11,8 @@ import com.pms.service.BoardService;
 
 @Service
 public class BoardServiceImpl implements BoardService{
-	@Autowired
-	BoardMapper boardMapper;
+	@Autowired(required=false)
+	private BoardMapper boardMapper;
 	
 	@Override
 	public List<BoardVO> getBoard() {
