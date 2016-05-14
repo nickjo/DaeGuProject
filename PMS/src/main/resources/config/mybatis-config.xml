@@ -41,5 +41,10 @@ PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
 			value="OTHER" /> <setting name="lazyLoadTriggerMethods" value="equals,clone,hashCode,toString" 
 			/> -->
 	</settings>
+	
+	<typeAliases>
+		<package name="com.pms.domain" />
+	</typeAliases>
 </configuration>
+
 

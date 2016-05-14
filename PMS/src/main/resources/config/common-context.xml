@@ -14,14 +14,13 @@
 		http://mybatis.org/schema/mybatis-spring http://mybatis.org/schema/mybatis-spring.xsd">
 		
 	<!-- BeanPostProcessor 를 함께 등록해 주므로 @Autowired 사용가능 -->	
-	<context:annotation-config />
-	
+	<context:annotation-config />	
 	<!-- @Configurable이 붙어있는 bean을 찾아서 스프링이 관리하도록 설정 -->
-	<context:spring-configured />
+	<context:spring-configured />	
+	<context:component-scan base-package="com.pms"/>
 	
 	<!-- DB접속 정보가 입력된 properties를 로드함 -->
 	<context:property-placeholder location="classpath:config/*.properties" />
-	
 	<!-- mybatis Mapper Scan -->
 	<!-- <mybatis:scan base-package="com.pms.repository.mapper"/> -->	
 </beans>
